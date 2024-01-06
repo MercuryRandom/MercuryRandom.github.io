@@ -85,6 +85,10 @@ https://blog.csdn.net/ggh_567/article/details/135262857
 
 注意格式
 
+### 关于README部署
+看这篇博文
+https://blog.csdn.net/qq_36759224/article/details/91981824
+
 ### 如果找不到问题？
 ```不是问题的问题```
 
