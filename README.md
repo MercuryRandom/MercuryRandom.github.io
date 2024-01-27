@@ -41,7 +41,7 @@ https://blog.csdn.net/cat_bayi/article/details/128725230
 https://blog.csdn.net/sinat_37781304/article/details/82729029
 
 3.这篇是一个朋友在自己blog上写的，可以参考他的ssh-keys绑定：
-https://imgod.me/posts/39317.html#%E9%80%9A%E8%BF%87-ssh-keys-%E7%BB%91%E5%AE%9A-GitHub
+https://imgod.me/posts/39317.html
 
 4.Butterfly除了有[官方文档](https://butterfly.js.org/)还有[官方文档的衍生改版](https://butterfly.zhheo.com/)，可塑性很强，其它主题应该也有自己的衍生版本
 
