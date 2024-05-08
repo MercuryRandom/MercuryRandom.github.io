@@ -1,6 +1,6 @@
 
 # README
-```如何搭建自己的Blog```
+```如何利用hexo搭建自己的Blog```
 
 ## 搭建和部署
 
@@ -34,7 +34,7 @@
 ```让我们看看其它人是怎么搭建的（详细）```
 
 
-1.真的是全网最详细的版本了，稍微注意就是node的下载地址的打开：
+1.稍微注意就是node的下载地址的打开：
 https://blog.csdn.net/cat_bayi/article/details/128725230
 
 2.这篇文章建议和上一篇对照着看：
@@ -83,11 +83,46 @@ https://blog.csdn.net/ggh_567/article/details/135262857
 
 ### 图片
 
-注意格式
+注意格式就行 
 
 ### 关于README部署
-看这篇博文
+解决方法：
+
+ 在根目录 source 文件夹下新建README.md 
+ 
+ 但是在我们部署的时候```.md```文件会被转换成```.html```
+
+hexo提供的办法是在根目录的```_config.yml```配置文件里,在```skip_render```关键字中添加READERME.md,让解释器跳过渲染
+
+> skip_render: README.md
+
+
+参考自文章：
 https://blog.csdn.net/qq_36759224/article/details/91981824
+
+
+### 关于ssh端口链接关闭或超时
+问题复述
+> $ ssh -T git@github.com
+Connection closed by 127.0.0.1 port 22
+
+或者
+> ssh: connect to host github.com port 22: Connection timed out
+
+解决方法：
+> cd ~/.ssh/
+vi config
+  在config中添加下面内容
+> Host github.com  
+User git  
+Hostname ssh.github.com 
+PreferredAuthentications publickey  
+IdentityFile ~/.ssh/id_rsa 
+Port 443
+
+参考自文章：
+[https://blog.csdn.net/glovenone/article/details/128376286](https://blog.csdn.net/glovenone/article/details/128376286)
+
 
 ### 如果找不到问题？
 ```不是问题的问题```
